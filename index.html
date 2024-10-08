@@ -16,9 +16,7 @@
         <div class="btn" id="remainder"  onclick=" currentdisplay+='%'  
         document.getElementById('display').value=currentdisplay
         "        >%</div>
-        <div class="btn" id="backspace"  onclick=" currentdisplay-='1'  
-        document.getElementById('display').value=currentdisplay
-        "       > 🔙 </div>
+        <div class="btn" id="backspace" onclick="hello()"   > 🔙 </div>
         <div class="btn" id="divide"> ➗ </div>
         <div class="btn" id="one"   onclick="currentdisplay+='1'  
         document.getElementById('display').value=currentdisplay
@@ -72,8 +70,12 @@
     </div>
 
     <script>
-      let currentdisplay=''
-      document.querySelector('#display').value=currentdisplay
+let currentdisplay=''
+ const hello=()=>{
+    
+    let get=currentdisplay.slice(0,-1)
+    document.getElementById('display')=get
+ }
     </script>
 </body>
 </html>

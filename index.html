@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black;">
+    <div class="container">
+<input type="text"  id="display" readonly>  
+<!-- readonly me no one can write -->
+        <div class="btn" id="AC"  onclick="currentdisplay ='' ;
+        document.getElementById('display').value=currentdisplay
+        "        >AC</div>
+        <div class="btn" id="remainder"  onclick=" currentdisplay+='%'  
+        document.getElementById('display').value=currentdisplay
+        "        >%</div>
+        <div class="btn" id="backspace"  onclick=" currentdisplay-='1'  
+        document.getElementById('display').value=currentdisplay
+        "       > 🔙 </div>
+        <div class="btn" id="divide"> ➗ </div>
+        <div class="btn" id="one"   onclick="currentdisplay+='1'  
+        document.getElementById('display').value=currentdisplay
+        "         >1</div>
+        <div class="btn" id="two" onclick=" currentdisplay+='2'
+        document.getElementById('display').value=currentdisplay
+        "       >2</div>
+        <div class="btn" id="three"  onclick=" currentdisplay+='3'  
+        document.getElementById('display').value=currentdisplay
+        "       >3</div>
+        <div class="btn" id="mult" onclick=" currentdisplay+='* ' 
+        document.getElementById('display').value=currentdisplay
+        "       > × </div>
+        <div class="btn" id="four"  onclick=" currentdisplay+='4'  
+        document.getElementById('display').value=currentdisplay
+        "       >4</div>
+        <div class="btn" id="five"  onclick=" currentdisplay+='5'  
+        document.getElementById('display').value=currentdisplay
+        "       >5</div>
+        <div class="btn" id="six"   onclick=" currentdisplay+='6'
+        document.getElementById('display').value=currentdisplay
+        "       >6</div>
+        <div class="btn" id="minus"  onclick=" currentdisplay+='-'  
+        document.getElementById('display').value=currentdisplay
+        "       > - </div>
+        <div class="btn" id="seven"  onclick=" currentdisplay+='7'  
+        document.getElementById('display').value=currentdisplay
+        "       >7</div>
+        <div class="btn" id="eight"  onclick=" currentdisplay+='8'  
+        document.getElementById('display').value=currentdisplay
+        "       >8</div>
+        <div class="btn" id="nine" onclick=" currentdisplay+='9'  
+        document.getElementById('display').value=currentdisplay
+        "       >9</div>
+        <div class="btn" id="plus"  onclick=" currentdisplay+='+'  
+        document.getElementById('display').value=currentdisplay
+        "       > + </div>
+        <div class="btn" onclick=" currentdisplay+= '00'
+        document.getElementById('display').value=currentdisplay
+        "        id="doublezero">00</div>
+        <div class="btn" id="zero"  onclick=" currentdisplay+='0'
+        document.getElementById('display').value=currentdisplay
+        "       >0</div>
+        <div class="btn" id="dot"  onclick=" currentdisplay+='.'  
+        document.getElementById('display').value=currentdisplay
+        "        >.</div>
+        <div class="btn" id="answer" onclick="
+        let result=eval(currentdisplay)
+        currentdisplay=result
+        document.getElementById('display').value=currentdisplay">=</div>
+    </div>
+
+    <script>
+      let currentdisplay=''
+      document.querySelector('#display').value=currentdisplay
+    </script>
+</body>
+</html>

@@ -7,45 +7,37 @@
 </head>
 <body>
     
-    <input type="text" id="fist">
-    <input type="text" id="second">
-    <input type="text" id="third">
-    <input type="text" id="fourth">
-    <input type="text" id="five">
 
-    <button onclick="hello()"> click</button>
-    <h1 id="coll"></h1>
-
+<input type="text"   value=""  id="getyear">
+<input type="text"   value=""  id="getmonth">
+<button id="check">click</button>
     <script>
-  const hello=()=>{
-    let first=document.querySelector('#fist')
-    let second=document.querySelector('#second')
-    let third=document.querySelector('#third')
-    let fourth=document.querySelector('#fourth')
-    let five=document.querySelector('#five')
+      
+
+
+
+      const get =document.getElementById('check')
+
+const Good=()=>{
+
+  let a=[31,29,31,30]
+  let b= ['jan','feb','march','aril']
  
-let total=parseInt(((first+second+third+fourth+five)/500)*100)
-
-let final=''
-
-if(total >=88 && total <=100){
-final='A'
-
+  let year=parseInt(document.getElementById('getyear').value)
+  let month=document.getElementById('getmonth').value
+if(year%4===0 && !year%100===0 || !year%400===0){
+let z=b.indexOf(month)
+console.log(a[z])
+}else{
+  console.log('no')
 }
-else if(total >=77 && total <=87){
-final='B'
 
 }
 
-else{
-final='C'
+get.addEventListener('click',Good)
 
-}
-document.querySelector('#coll').innerHTML= final
-  }
 
     </script>
-
 
 
 </body>

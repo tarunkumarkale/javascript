@@ -6,14 +6,47 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <input type="text" id="fist">
+    <input type="text" id="second">
+    <input type="text" id="third">
+    <input type="text" id="fourth">
+    <input type="text" id="five">
+
+    <button onclick="hello()"> click</button>
+    <h1 id="coll"></h1>
+
     <script>
-       
-        
-  const name =18 
-   let ok= name>18 ?'yes':'no'
-        
-console.log(ok)
-         
+  const hello=()=>{
+    let first=document.querySelector('#fist')
+    let second=document.querySelector('#second')
+    let third=document.querySelector('#third')
+    let fourth=document.querySelector('#fourth')
+    let five=document.querySelector('#five')
+ 
+let total=parseInt(((first+second+third+fourth+five)/500)*100)
+
+let final=''
+
+if(total >=88 && total <=100){
+final='A'
+
+}
+else if(total >=77 && total <=87){
+final='B'
+
+}
+
+else{
+final='C'
+
+}
+
+  }
+document.querySelector('#coll').innerHTML= final
     </script>
+
+
+
 </body>
 </html>

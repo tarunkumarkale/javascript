@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
+  <input type="text" id="num">
+  <select id="unit">
+    <option value="first">Fahrenheit</option>
+    <option value="second">Celsius</option>
+  </select>
+
+
+<script>
+
+
+const unit=document.getElementById('unit')
+
+
+
+
+unit.addEventListener('change',()=>{
+  const num=document.getElementById('num')
+  if(unit.value==='first'){
     
+  }
+  if(unit.value==='second'){
 
-<input type="text"   value=""  id="getyear">
-<input type="text"   value=""  id="getmonth">
-<button id="check">click</button>
-    <script>
-      
+  }
+})
 
-
-
-      const get =document.getElementById('check')
-
-const Good=()=>{
-
-  let a=[31,29,31,30]
-  let b= ['jan','feb','march','aril']
- 
-  let year=parseInt(document.getElementById('getyear').value)
-  let month=document.getElementById('getmonth').value
-if(year%4===0 && !year%100===0 || !year%400===0){
-let z=b.indexOf(month)
-console.log(a[z])
-}else{
-  console.log('no')
-}
-
-}
-
-get.addEventListener('click',Good)
+</script>
 
 
-    </script>
-
-
+  
 </body>
 </html>

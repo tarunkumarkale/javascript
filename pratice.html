@@ -6,34 +6,22 @@
   <title>Document</title>
 </head>
 <body>
-  <input type="text" id="num">
-  <select id="unit">
-    <option value="first">Fahrenheit</option>
-    <option value="second">Celsius</option>
-  </select>
 
+  <input type="text" id="hello">
+  <button id="get">click</button>
 
-<script>
+  <script>
+    const get = document.getElementById('get');
 
+    get.addEventListener('click', () => {
+      const inputText = document.getElementById('hello').value;
+      let display = '';
+      for (let i = 0; i < inputText.length; i++) {
+        display += inputText.charCodeAt(i) ;
+      }
+      console.log(display);
+    });
+  </script>
 
-const unit=document.getElementById('unit')
-
-
-
-
-unit.addEventListener('change',()=>{
-  const num=document.getElementById('num')
-  if(unit.value==='first'){
-    
-  }
-  if(unit.value==='second'){
-
-  }
-})
-
-</script>
-
-
-  
 </body>
 </html>

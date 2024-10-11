@@ -11,16 +11,9 @@
   <button id="get">click</button>
 
   <script>
-    const get = document.getElementById('get');
-
-    get.addEventListener('click', () => {
-      const inputText = document.getElementById('hello').value;
-      let display = '';
-      for (let i = 0; i < inputText.length; i++) {
-        display += inputText.charCodeAt(i) ;
-      }
-      console.log(display);
-    });
+    The greet function takes two parameters: name and callback.
+Inside greet, the name is logged, and then the callback function is called.
+The sayGoodbye function is passed as a callback when calling greet. After logging "Hello, Tarun!", it then calls sayGoodbye, which logs "Goodbye!"
   </script>
 
 </body>

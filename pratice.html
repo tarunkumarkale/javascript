@@ -11,9 +11,26 @@
   <button id="get">click</button>
 
   <script>
-    The greet function takes two parameters: name and callback.
-Inside greet, the name is logged, and then the callback function is called.
-The sayGoodbye function is passed as a callback when calling greet. After logging "Hello, Tarun!", it then calls sayGoodbye, which logs "Goodbye!"
+
+const big=()=>{
+return `father`
+}
+
+const littlebig=()=>{
+  return `mother`
+}
+
+const family=(a)=>{
+ return a()
+  }
+
+let store1=family(big)
+document.write(store1)
+let store2=family(littlebig)
+document.write(store2)
+
+
+
   </script>
 
 </body>

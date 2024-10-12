@@ -6,32 +6,29 @@
   <title>Document</title>
 </head>
 <body>
+  
 
-  <input type="text" id="hello">
-  <button id="get">click</button>
+<script>
+var myFriends = ['ramesh', 22, 'male', 'arjun', 20, 'male', 'vishal', true, 52];
 
-  <script>
-
-const big=()=>{
-return `father`
+const fun=(get)=>{
+console.log(get())
 }
 
-const littlebig=()=>{
-  return `mother`
-}
 
-const family=(a)=>{
- return a()
-  }
+myFriends.forEach((element ,index)=> {
+  fun(()=>element)
 
-let store1=family(big)
-document.write(store1)
-let store2=family(littlebig)
-document.write(store2)
+})
 
 
 
-  </script>
+
+
+
+
+
+</script>
 
 </body>
 </html>
